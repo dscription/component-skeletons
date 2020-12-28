@@ -23,7 +23,7 @@ const Articles = () => {
         ))
       )}
 
-      {!articles && [1,2,3,4,5].map((n) => <SkelentonArticle key={n} />)}
+      {!articles && [1,2,3,4,5].map((n) => <SkelentonArticle key={n} theme="light" />)}
     </div>
   )
 }
