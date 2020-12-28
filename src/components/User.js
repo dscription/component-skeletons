@@ -12,6 +12,17 @@ const User = () => {
   return (
     <div className="user">
       <h2>User Details</h2>
+      {profile && (
+        <div className="profile">
+          <h3>
+            {profile.username}
+            <p>{profile.email}</p>
+            <a href={profile.website}>{profile.website}</a>
+          </h3>
+        </div>
+      )}
+
+      {!profile && <div>Loading...</div>}
     </div>
   );
 };
